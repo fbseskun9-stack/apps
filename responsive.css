@@ -1,0 +1,10 @@
+/* Minimal responsive CSS for Shopee phishing site */
+body { max-width: 100%; overflow-x: hidden; }
+@media (max-width: 480px) {
+  .login-content { padding: 20px 15px; }
+  .sizing { width: 95vw; margin: 0 auto; }
+  .pinNumb { width: 90px; font-size: 28px; padding: 10px; }
+}
+@media (max-width: 360px) {
+  .input-wrapper { padding: 12px; }
+}

